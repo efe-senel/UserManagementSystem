@@ -97,11 +97,11 @@ public class User {
     }
 
     public static class UserFactory {
-        public static User managerExecutor(String name) {
+        public static User createManager(String name) {
             return new User(name, "Manager");
         }
 
-        public static User standartUserExecutor(String name) {
+        public static User createStandartUser(String name) {
             return new User(name, "Standard User");
         }
     }

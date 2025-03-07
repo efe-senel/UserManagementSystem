@@ -21,13 +21,13 @@ public class Main {
                 case 1:
                     System.out.print("Enter name: ");
                     name = scanner.nextLine();
-                    User manager = User.UserFactory.managerExecutor(name);
+                    User manager = User.UserFactory.createManager(name);
                     System.out.println("Manager '" + name + "' has been created.");
                     break;
                 case 2:
                     System.out.print("Enter name: ");
                     name = scanner.nextLine();
-                    User normalUser = User.UserFactory.standartUserExecutor(name);
+                    User normalUser = User.UserFactory.createStandartUser(name);
                     System.out.println("Standard user '" + name + "' has been created.");
                     break;
                 case 3:
